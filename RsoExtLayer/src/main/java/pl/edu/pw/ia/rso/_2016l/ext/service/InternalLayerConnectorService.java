@@ -2,7 +2,6 @@ package pl.edu.pw.ia.rso._2016l.ext.service;
 
 import javax.servlet.ServletOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.MalformedURLException;
 
 /**
@@ -11,5 +10,7 @@ import java.net.MalformedURLException;
 public interface InternalLayerConnectorService {
 
     public void getFile(long id, ServletOutputStream output) throws IOException;
+
+    public void checkVitality() throws IOException;
 
 }
